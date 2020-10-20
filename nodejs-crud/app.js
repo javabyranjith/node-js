@@ -1,7 +1,7 @@
 const productService = require("./product-service");
 const yargs = require("yargs");
-const { argv } = require("yargs");
 
+// ADD PRODUCT
 yargs.command({
   command: "addProduct",
   describe: "Add Product",
@@ -36,6 +36,7 @@ yargs.command({
   },
 });
 
+// DELETE PRODUCT
 yargs.command({
   command: "deleteProduct",
   describe: "Add Product",
@@ -51,6 +52,7 @@ yargs.command({
   },
 });
 
+// GET ALL THE AVAILABLE PRODUCTS
 yargs.command({
   command: "getAllProduct",
   describe: "Get all Products",
