@@ -43,6 +43,12 @@ const readAllData = () => {
   }
 };
 
+const readDataById = (id) => {
+  const data = fs.readFileSync("product-data.json");
+  const found = JSON.parse(data).find((e) => e.id === id);
+  return found;
+};
+
 const insertData = (dataToInsert) => {
   const dataToInsertJson = JSON.stringify(dataToInsert);
   fs.writeFileSync("product-data.json", dataToInsertJson);
@@ -53,4 +59,5 @@ module.exports = {
   addProduct: addProduct,
   deleteProduct: deleteProduct,
   readAllData: readAllData,
+  readDataById: readDataById,
 };

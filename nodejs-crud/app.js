@@ -65,4 +65,21 @@ yargs.command({
   },
 });
 
+// GET PRODUCT BY ID
+yargs.command({
+  command: "getProductById",
+  describe: "Get product by id",
+  builder: {
+    id: {
+      describe: "product id",
+      demandOption: true,
+      type: "string",
+    },
+  },
+  handler: (argv) => {
+    const data = productService.readDataById(argv.id);
+    console.log("id: " + data.id + " Name: " + data.name);
+  },
+});
+
 yargs.parse();
