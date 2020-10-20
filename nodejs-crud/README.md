@@ -1,6 +1,7 @@
 ### TECHNOLOGIES
   1. Node JS
-  2. 
+  2. ES6
+   
 ### TOOLS
   1. Visual Studio Code Editor
   
