@@ -11,10 +11,12 @@
   3. Insert, Delete and Read 
 
 ### HOW TO RUN?
-  1. Go run command
-  2. $ node app.js addProduct --id="100" --name="Realme7" --category="mobile" --price=14000
-  3. $ node app.js deleteProduct --id="100"
-  4. $ node app.js getAllProduct
+  1. Go run command (If you download/fork this project, run 'npm install' after download)
+  2. $ node app.js addProduct --id="100" --name="Realme 7" --category="mobile" --price=14000
+  3. $ node app.js addProduct --id="200" --name="Realme X3" --category="mobile" --price=17000
+  4. $ node app.js deleteProduct --id="100"
+  5. $ node app.js getProductById --id="100"
+
 
 ### PACKAGES INSTALLED
   1. npm i yargs
